@@ -1,0 +1,6 @@
+# 处理包装返回数据
+net.kegui.framework.core.api.advice.ResponseAdvice
+# 异常处理
+net.kegui.framework.core.api.exception.RestExceptionHandler
+# Mvc配置
+net.kegui.framework.core.api.config.WebMvcConfig
