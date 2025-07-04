@@ -1,0 +1,2 @@
+# mybatis-plus 自动插入创建时间配置
+net.kegui.framework.datasource.config.MybatisAutoFillConfig

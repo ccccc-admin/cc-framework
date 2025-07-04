@@ -18,14 +18,18 @@ public class CommonResult<T> implements Serializable {
     private long code;
     private String message;
     private T data;
+    private long timestamp;
+
 
     protected CommonResult() {
+        this.timestamp = System.currentTimeMillis();
     }
 
     protected CommonResult(long code, String message, T data) {
         this.code = code;
         this.message = message;
         this.data = data;
+        this.timestamp = System.currentTimeMillis();
     }
 
     /**
@@ -183,12 +187,21 @@ public class CommonResult<T> implements Serializable {
         this.data = data;
     }
 
+    public long getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(long timestamp) {
+        this.timestamp = timestamp;
+    }
+
     @Override
     public String toString() {
         return "CommonResult{" +
                 "code=" + code +
                 ", message='" + message + '\'' +
                 ", data=" + data +
+                ", timestamp=" + timestamp +
                 '}';
     }
 }
