@@ -32,10 +32,9 @@ public class WebMvcConfig implements WebMvcConfigurer {
                 });
     }
 
-    @Override
-    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
-        // 将JSON转换器放在前面，提高优先级
-        converters.add(0, new MappingJackson2HttpMessageConverter());
-    }
+//    @Override
+//    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
+//        converters.add(0, new MappingJackson2HttpMessageConverter());
+//    }
 
 }

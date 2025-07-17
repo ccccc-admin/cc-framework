@@ -78,4 +78,12 @@ public class RestExceptionHandler {
         log.warn("未登录: {}", e.getMessage());
         return CommonResult.unauthorized(e.getMessage(),null);
     }
+    /**
+     * 登录错误异常
+     */
+    @ExceptionHandler(AuthException.class)
+    @ResponseStatus(HttpStatus.UNAUTHORIZED)
+    public CommonResult<String> authException(AuthException e){
+        return CommonResult.unauthorized(e.getMessage(),null);
+    }
 }

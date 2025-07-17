@@ -4,3 +4,5 @@ net.kegui.framework.core.api.advice.ResponseAdvice
 net.kegui.framework.core.api.exception.RestExceptionHandler
 # Mvc配置
 net.kegui.framework.core.api.config.WebMvcConfig
+# Json反序列化器
+net.kegui.framework.core.api.config.JacksonConfig
